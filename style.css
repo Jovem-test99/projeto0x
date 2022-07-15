@@ -38,6 +38,10 @@ main {
     height: 180px;
 }
 
+hr {
+    display: none;
+}
+
 h3 {
     text-align: center;
     margin-top: 10px;
@@ -104,4 +108,37 @@ footer {
     background-color: #000;
     color: #FFF;
     padding: 80px;
+}
+
+@media screen and (max-width: 420px) {
+    .grade {
+        padding: 20px;
+    }
+    .card {
+        display: block;
+        width: 100%;
+    }
+    hr {
+        display: block;
+        padding: 3px;
+        border: none;
+        background-image: linear-gradient(to right, blue, orange);
+    }
+    h3 {
+        border-radius: 0px 0px 30px 30px;
+        margin-top: 0px;
+    }
+    body::-webkit-scrollbar {
+        width: 10px;
+    }
+      
+    body::-webkit-scrollbar-track {
+        background: orange;
+    }
+      
+    body::-webkit-scrollbar-thumb {
+        background-color: #2779DB;
+        border-radius: 20px;
+        border: 2px solid orange;
+    }
 }
