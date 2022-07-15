@@ -118,6 +118,10 @@ footer {
         display: block;
         width: 100%;
     }
+    .imagesbt {
+        width: 100%;
+        height: 270px;
+    }
     hr {
         display: block;
         padding: 3px;
